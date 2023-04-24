@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job listing app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=light">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="test.json">
+
+</head>
+<body>
+
+    <!-- cookies -->
+    <div id="cookie">
+        <p>We use cookies to enhance your experience. By continuing to use our website, you consent to our use of cookies. This enhances your experience</p>
+        <button id="accept-btn">Accept</button>
+      </div>
+      
+    <!-- go to top button  -->
+
+    <button id="back-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- hamburger -->
+    <div class="navbar">
+    <div id="navigation">
+        <div id="menu"  onclick="onClickMenu()" >
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <div id="hide">
+            <div id="pic" >
+                <ul>
+                    <li><button class="b-1">Sign up </button></li>
+                    <li><button class="b-2">Login</button>
+                    </ul>
+                </div>
+                
+                
+                <ul  id="nav1">
+                    <li><a href="javascript:void(0)">Create a Job account</a></li>
+                    <li><a href="javascript:void(0)">Add your Resume</a></li>
+                    <li><a href="javascript:void(0)">View Profiles</a></li>
+                </ul>
+                <br>
+            <br>
+            <br>
+            <div id="ue">
+                <ul>
+                    <li> <img src="/images/ham.png" alt="" height="100px" width="100px"></li>
+                    <li><p>There's more to love in </p><p>the app</p></li>
+                </ul>
+            </div>
+            <div id="plat">
+                <div class="class"> <button><img src="/images/apple.png" alt="" height="10px" width="10px">iPhone</button> </div>
+                <div class="class"> <button><img src="/images/android.png" alt="" height="10px" width="10px">Android</button> </div>
+            </div>
+        </div>
+    </div> 
+
+
+        <!-- navbar -->
+        <div class="left">
+        <div id="n1" class="nav">
+            <a href="javascript:void(0)" id="u">Find Jobs</a>
+        </div>
+        <div id="n2" class="nav">
+            <a href="javascript:void(0)">Company Reviews<i class="fa fa-caret-down"></i></a>
+            <div class="content">
+                <a href="#">
+                    <div class="company1">
+                        <div class="logo">
+                            <img src="/images/TESLA.png" alt="" height="50px" width="50px">
+                        </div>
+                        <div class="rating">
+                            <p>Tesla</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                            <p><a href="">1090 Reviews</a></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="company2">
+                        <div class="logo">
+                            <img src="/images/google.png" alt="" height="50px" width="50px">
+                        </div>
+                        <div class="rating2">
+                            <p>Google</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                            <p><a href="">100 Reviews</a></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="company2">
+                        <div class="logo">
+                            <img src="/images/twitter.png" alt="" height="50px" width="50px">
+                        </div>
+                        <div class="rating3">
+                            <p>Google</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                            <p><a href="">500 Reviews</a></p>
+                        </div>
+                    </div>
+                </a>
+                <a href=""  class="load" height="50px"  width="50px">Load More......</a>
+            </div>
+        </div>
+        </div>
+        <div class="right">
+            <div id="n3" class="nav">
+            <a href=""><i class="fa-solid fa-file"></i>Post your resume</a>
+        </div>
+        <div id="n4" class="nav">
+            <a href=""><i class="fa-sharp fa-solid fa-user-plus"></i>Sign Up/Sign In</a>
+        </div>
+        <div id="n5" class="nav">
+            <a href=""><i class="fa-solid fa-file-import"></i>Post a Job</a>
+        </div>
+        <div id="n6" class="nav">
+            <a href=""><i class="fa-regular fa-address-book"></i>Contact us</a>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- search section -->
+
+    <div class="search">
+        <div class="section2">
+            <div class="tag">
+                World's Largest Job Portal
+            </div>
+            <div class="Search">
+                   <div class="s" id="S1">
+                     <div class="s1">
+                        <label >
+                            What
+                        </label>
+                    </div>
+                    <div class="autocomplete" >
+                      <input id="job-title1" type="text" name="job title" placeholder="Job title or keywords" onkeyup="search()">
+                    </div>
+                    <span class="logo">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    </div>
+                   <div class="s" id="S2">
+                     <div class="s2">
+                        <label >
+                            Where
+                        </label>
+                    </div>
+                    <div  id="bar" class="autocomplete" >
+                      <input id="job-title2" type="text" name="job title" placeholder="City or State ">
+                    </div>
+                    
+                    <span class="logo">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    </div>
+                    <div class="s3">
+                        <button >Find Jobs</button>
+                    </div>
+
+
+            </div>
+            <div class="s4">
+                <form action="/action_page.php">
+                    <p id="nature">Please Select the nature of the Job</p>
+                   <input type="radio" id="r1" name="time" value="full" >
+                   <label for="html">Full Time</label><br>
+                   <input type="radio" id="r2" name="time" value="part" >
+                   <label for="css">Part Time</label><br>
+                  </form> 
+            </div>
+
+            <div class="s5">
+                <p>
+                    <a href="">
+                        <i class="fa-solid fa-upload"></i>
+                            Post your Resume here
+                    </a>
+                    <p id="mate">- This takes only a few seconds mate!</p>
+                </p>    
+            </div>
+            <div class="s6"> 
+                <button> Click to View The Full Site<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- profiles-->
+        <div class="profile">
+    <div id="joblist" class="left-side">
+    <div id="job-template1" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href=" javascript:void(0)" id="link1" >Software Designer</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td id="fuck"><u>Title</u>: Software Designer</td>
+        <td class="right-column"><u>Location</u>:Rajasthan</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Hello Developers Pvt.ltd</td>
+        <td class="right-column"><u>Country</u>: India</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 20k-50k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+    </div>  
+    
+    <!-- after this the same code is repeated 14 times to create new job cards -->
+    <div id="job-template2" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link2">Software Designer</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Software Designer</td>
+        <td class="right-column"><u>Location</u>:Goa</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: fBI</td>
+        <td class="right-column"><u>Country</u>: India</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 1lakh/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA </li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template3" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link3">Software Designer</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Software Designer</td>
+        <td class="right-column"><u>Location</u>Haryana</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Codecreators</td>
+        <td class="right-column"><u>Country</u>: India</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 10k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Part-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li> NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+
+      </div>
+
+      <div id="job-template4" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link4">Data Analystic</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Data Analystic</td>
+        <td class="right-column"><u>Location</u>:Alabama</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Statistify pvt ltd</td>
+        <td class="right-column"><u>Country</u>: US</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 2lakh/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>  
+
+
+    <div id="job-template5" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link5">Data Analystic</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Data Analystic</td>
+        <td class="right-column"><u>Location</u>:Arizona</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Boston Consulting Group</td>
+        <td class="right-column"><u>Country</u>: US</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 248k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template6" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link6">Data Analystic</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Data Aanalystic</td>
+        <td class="right-column"><u>Location</u>:Karachi</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: TRUE</td>
+        <td class="right-column"><u>Country</u>: Pakistan</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 10K/MONTH</td>
+        <td class="right-column"><u>Job-nature</u>: PART-TIME</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template7" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link7">Private Banker</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Private Banker</td>
+        <td class="right-column"><u>Location</u>:Alaska</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Shawn Cayhill Investments</td>
+        <td class="right-column"><u>Country</u>: US</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 3lakh/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template8" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link8">Private Banker</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Private Banker</td>
+        <td class="right-column"><u>Location</u>:Bihar</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Chandralal trust</td>
+        <td class="right-column"><u>Country</u>:India</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>:50k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Part-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template9" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link9">Private Banker</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>: Private Banker</td>
+        <td class="right-column"><u>Location</u>:ueensland</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Ares</td>
+        <td class="right-column"><u>Country</u>: IYKYK</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 20k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template10" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link10">Private Banker</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>:Private Banker</td>
+        <td class="right-column"><u>Location</u>:Queensland</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Specter</td>
+        <td class="right-column"><u>Country</u>: Australia</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 20k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template11" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link11">Trader Distributor</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>:Trader Distributor</td>
+        <td class="right-column"><u>Location</u>:Victoria</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Loaders</td>
+        <td class="right-column"><u>Country</u>: Australia</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 5k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Part-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template12" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link12">Trader Distributor</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>:Trader Distributor</td>
+        <td class="right-column"><u>Location</u>:England</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Adani Group</td>
+        <td class="right-column"><u>Country</u>: UK</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 60k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template13" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link13">Trader Distributor</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>:Trader Distributor</td>
+        <td class="right-column"><u>Location</u>:Wales</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Birla</td>
+        <td class="right-column"><u>Country</u>: UK</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 60k/month</td>
+        <td class="right-column"><u>Job-nature</u>: Full-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template14" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link14">Trader Distributor</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>:Trader Distributor</td>
+        <td class="right-column"><u>Location</u>:UP</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: Ambani Group</td>
+        <td class="right-column"><u>Country</u>: India</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 1.2lakh/month</td>
+        <td class="right-column"><u>Job-nature</u>: Part-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+
+    <div id="job-template15" class="template">
+        <div class="title-part">
+          <p class="job-title"><a href="javascript:void(0)" id="link15">Trader Distributor</a></p>
+        </div>
+        <div class="about-part">
+          <table>
+      <tr>
+        <td><u>Title</u>:Trader Distributor</td>
+        <td class="right-column"><u>Location</u>:Delhi</td>
+      </tr>
+      <tr>
+        <td><u>Company Name</u>: TATA Group</td>
+        <td class="right-column"><u>Country</u>: India</td>
+      </tr>
+      <tr>
+        <td><u>Salary</u>: 1.5lakh/month</td>
+        <td class="right-column"><u>Job-nature</u>: Part-time</td>
+      </tr>
+      <tr>
+        <td><u>Job Overview</u>
+            <ul>
+                <li>NA</li>
+                <li>NA</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Job Requirements</u>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><u>Work Involved</u>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </td>
+      </tr>
+      
+    </table>
+        </div>
+      </div>
+      </div>
+
+      <div id="right-side" >
+        <!-- <button id="close"  > nikal lavde</button> -->
+        <div id="info1" class="detail">
+            <span class="close">&times;</span>
+          <div class="part-1">
+                <ul>
+                    <li class="remove" id="job">Software Designer</li>
+                    <li class="remove"><a href="">Hello Developers pvt. ltd.</a></li>
+                    <li class="remove">40k-50k/month</li>
+                    <li class="remove">
+                        <button>Apply Now</button>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="part-2">
+                <ul id="part2">
+                    <li class="remove" id="details">Job details</li>
+                    <li class="remove">
+                        <ul >
+                            <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                            <li>first one</li>
+                            <li>second one</li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="remove">
+                        <ul >
+                            <li class="remove" >Benefits</li>
+                            <li>first one</li>
+                            <li>second one </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="remove">
+                        <li class="remove">FULL JOB DESCRIPTION</li>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="remove">
+                        <button >REPORT JOB</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="info2" class="detail">
+            <span class="close">&times;</span>
+          <div class="part-1">
+              <ul>
+                  <li class="remove" id="job">Software Designer</li>
+                  <li class="remove"><a href="">fBI</a></li>
+                  <li class="remove">1lakh/month</li>
+                  <li class="remove">
+                      <button>Apply Now</button>
+                  </li>
+              </ul>
+              <hr>
+          </div>
+          <div class="part-2">
+              <ul id="part2">
+                  <li class="remove" id="details">Job details</li>
+                  <li class="remove">
+                      <ul >
+                          <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                          <li>first one</li>
+                          <li>second one</li>
+                      </ul>
+                  </li>
+                  <hr>
+                  <li class="remove">
+                      <ul >
+                          <li class="remove" >Benefits</li>
+                          <li>first one</li>
+                          <li>second one </li>
+                      </ul>
+                  </li>
+                  <hr>
+                  <li class="remove">
+                      <li class="remove">FULL JOB DESCRIPTION</li>
+                      <ul>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                      </ul>
+                  </li>
+                  <hr>
+                  <li class="remove">
+                      <button >REPORT JOB</button>
+                  </li>
+              </ul>
+          </div>
+        </div>
+
+        <div  id="info3" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+            <ul>
+                <li class="remove" id="job">Software Designer</li>
+                <li class="remove"><a href="">Codecreators</a></li>
+                <li class="remove">10k/month</li>
+                <li class="remove">
+                    <button>Apply Now</button>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div class="part-2">
+            <ul id="part2">
+                <li class="remove" id="details">Job details</li>
+                <li class="remove">
+                    <ul >
+                        <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                        <li>first one</li>
+                        <li>second one</li>
+                    </ul>
+                </li>
+                <hr>
+                <li class="remove">
+                    <ul >
+                        <li class="remove" >Benefits</li>
+                        <li>first one</li>
+                        <li>second one </li>
+                    </ul>
+                </li>
+                <hr>
+                <li class="remove">
+                    <li class="remove">FULL JOB DESCRIPTION</li>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </li>
+                <hr>
+                <li class="remove">
+                    <button >REPORT JOB</button>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div id="info4" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+          <ul>
+              <li class="remove" id="job">Data Analystic</li>
+              <li class="remove"><a href="">Statistify pvt. ltd. </a></li>
+              <li class="remove">2lakh/month</li>
+              <li class="remove">
+                  <button>Apply Now</button>
+              </li>
+          </ul>
+          <hr>
+      </div>
+      <div class="part-2">
+          <ul id="part2">
+              <li class="remove" id="details">Job details</li>
+              <li class="remove">
+                  <ul >
+                      <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                      <li>first one</li>
+                      <li>second one</li>
+                  </ul>
+              </li>
+              <hr>
+              <li class="remove">
+                  <ul >
+                      <li class="remove" >Benefits</li>
+                      <li>first one</li>
+                      <li>second one </li>
+                  </ul>
+              </li>
+              <hr>
+              <li class="remove">
+                  <li class="remove">FULL JOB DESCRIPTION</li>
+                  <ul>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                  </ul>
+              </li>
+              <hr>
+              <li class="remove">
+                  <button >REPORT JOB</button>
+              </li>
+          </ul>
+      </div>
+        </div>
+
+        <div id="info5" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+        <ul>
+            <li class="remove" id="job">Data Analystic</li>
+            <li class="remove"><a href="">Boston Consulting Group</a></li>
+            <li class="remove">248k/month</li>
+            <li class="remove">
+                <button>Apply Now</button>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="part-2">
+        <ul id="part2">
+            <li class="remove" id="details">Job details</li>
+            <li class="remove">
+                <ul >
+                    <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                    <li>first one</li>
+                    <li>second one</li>
+                </ul>
+            </li>
+            <hr>
+            <li class="remove">
+                <ul >
+                    <li class="remove" >Benefits</li>
+                    <li>first one</li>
+                    <li>second one </li>
+                </ul>
+            </li>
+            <hr>
+            <li class="remove">
+                <li class="remove">FULL JOB DESCRIPTION</li>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </li>
+            <hr>
+            <li class="remove">
+                <button >REPORT JOB</button>
+            </li>
+        </ul>
+    </div>
+        </div>
+
+        <div id="info6" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+      <ul>
+          <li class="remove" id="job">Data Analystic</li>
+          <li class="remove"><a href="">TRUE</a></li>
+          <li class="remove">10K/MONTH</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+      </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info7" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+      <ul>
+          <li class="remove" id="job">Private Investment Banker</li>
+          <li class="remove"><a href="">Shawn Cayhill Investments</a></li>
+          <li class="remove">3lakh/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+      </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info8" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+      <ul>
+          <li class="remove" id="job">Personal Investment Bnaker</li>
+          <li class="remove"><a href="">Chandralala Trust</a></li>
+          <li class="remove">50k/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+      </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info9" class="detail">
+            <span class="close">&times;</span>
+  <div class="part-1">
+      <ul>
+          <li class="remove" id="job"> Private  Investment Banker</li>
+          <li class="remove"><a href="">Ares</a></li>
+          <li class="remove">20k/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+      </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info10" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+             <ul>
+          <li class="remove" id="job"> Private Investment Banker</li>
+          <li class="remove"><a href="">Specter </a></li>
+          <li class="remove">20k/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+            </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info11" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+      <ul>
+          <li class="remove" id="job">Trader Distributor</li>
+          <li class="remove"><a href="">loaders</a></li>
+          <li class="remove">5k/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+      </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info12" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+      <ul>
+          <li class="remove" id="job">Trader Distributor</li>
+          <li class="remove"><a href="">Adani Group</a></li>
+          <li class="remove">60k/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+      </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info13" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+        <ul>
+          <li class="remove" id="job">Trader Distributor</li>
+          <li class="remove"><a href="">Birla</a></li>
+          <li class="remove">60k/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+        </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info14" class="detail">
+            <span class="close">&times;</span>
+        <div class="part-1">
+        <ul>
+          <li class="remove" id="job">Trader Distributor</li>
+          <li class="remove"><a href="">Ambani Group</a></li>
+          <li class="remove">1.2lakh/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+         </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+
+        <div id="info15" class="detail">
+            <span class="close">&times;</span>
+  <div class="part-1">
+      <ul>
+          <li class="remove" id="job">Trader Distributor</li>
+          <li class="remove"><a href="">Tata Group</a></li>
+          <li class="remove">1.5lakh/month</li>
+          <li class="remove">
+              <button>Apply Now</button>
+          </li>
+      </ul>
+      <hr>
+  </div>
+  <div class="part-2">
+      <ul id="part2">
+          <li class="remove" id="details">Job details</li>
+          <li class="remove">
+              <ul >
+                  <li class="remove" id="qual">QUALIFICATIONS</t><i class="fa-solid fa-graduation-cap"></i></li>
+                  <li>first one</li>
+                  <li>second one</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <ul >
+                  <li class="remove" >Benefits</li>
+                  <li>first one</li>
+                  <li>second one </li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <li class="remove">FULL JOB DESCRIPTION</li>
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </li>
+          <hr>
+          <li class="remove">
+              <button >REPORT JOB</button>
+          </li>
+      </ul>
+  </div>
+        </div>
+        
+      </div>
+    </div>
+
+   
+    <br>
+
+
+
+
+
+
+
+
+   <script src="script.js"></script>
+   <script src="test.json"></script>
+    
+</body>
+</html>
